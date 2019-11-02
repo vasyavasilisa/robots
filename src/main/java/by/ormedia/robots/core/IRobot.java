@@ -1,12 +1,12 @@
 package by.ormedia.robots.core;
 
-public interface Robot {
+public interface IRobot {
 	/**
 	 * Method of adding new task to data base
 	 * 
 	 * @param task - task to add
 	 */
-	void addFreshTask(Task task);
+	void addNewTask(ITask task);
 
 	/**
 	 * Reporting method

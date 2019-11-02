@@ -2,14 +2,14 @@ package by.ormedia.robots.core;
 
 import java.util.Date;
 
-public interface Result {
+public interface IResult {
 	/**
 	 * Method of getting task execution time in milliseconds
 	 * 
 	 * @param task - task to calculate time
 	 * @return time in milliseconds
 	 */
-	long getTaskExecutionMilliseconds(Task task);
+	long getTaskExecutionTime(ITask task);
 
 	/**
 	 * Method of getting date when the task was started
@@ -17,7 +17,7 @@ public interface Result {
 	 * @param task - task to find starting date
 	 * @return starting date
 	 */
-	Date getTaskStartExecutionDate(Task task);
+	Date getDate(ITask task);
 
 	/**
 	 * Method of getting task description
@@ -25,13 +25,13 @@ public interface Result {
 	 * @param task - task to find description
 	 * @return task description
 	 */
-	String getTaskDescription(Task task);
+	String getTaskDescription(ITask task);
 
 	/**
-	 * Method of getting task performed robot
+	 * Method of getting robot performed this task
 	 * 
 	 * @param task - task to search robot
 	 * @return robot
 	 */
-	Robot getTaskPerformedRobot(Task task);
+	IRobot getRobot(ITask task);
 }
