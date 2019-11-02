@@ -9,7 +9,7 @@ public interface IResult {
 	 * @param task - task to calculate time
 	 * @return time in milliseconds
 	 */
-	long getTaskExecutionTime(ITask task);
+	long getExecutionTime(ITask task);
 
 	/**
 	 * Method of getting date when the task was started
